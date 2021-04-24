@@ -7,7 +7,7 @@ Marriage rates have been dropping over the past 20 years due to a number of soci
 My data came from the United States Center for Disease Control (https://www.cdc.gov/nchs/nvss/marriage-divorce.htm?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fnchs%2Fmardiv.htm). The two files of data I used are located under the "Detailed State Tables" section of the link. My first step was to reformat the data in such a way that it would be translatable in R for analyses. The data did not have to be cleaned, the CDC did a great job at providing the data completely and correctly (except for select states that did not disclose their demographic data). I then used RStudio to create scatter plots for the data with Locally Weighted Scatterplot Smoothing (LOWESS) lines to easily understand the visualizations (seen below). 
 
 ## VISUALIZATION:
-(https://github.com/brettgharris/bh_data115_proj/blob/main/marriage_rate_plot.png)
+("https://github.com/brettgharris/bh_data115_proj/blob/17f31e1772a7d8b009f30887606b1d88b8502a16/marriage_rate_plot.png")
   
 ## ANALYSIS:
 
