@@ -1,0 +1,32 @@
+---
+title: "BH_Personal_Dataset"
+output: pdf_document
+---
+
+```{r setup}
+library(tidyverse)
+state <- read_excel("./state_mar_div.xlsx")
+nat <- read_excel("./nat_mar_div.xlsx")
+select <- read_excel("./select_states_mar.xlsx")
+```
+
+```{r graphs}
+par(mfrow=c(2,3))
+plot(nat$Year, nat$Marriage_Rate, main = "National Marriage Rate",
+     xlab = "Years", ylab = "Marriages per 1,000 people") + lines(lowess(nat$Marriage_Rate ~ nat$Year), col = "black")
+
+plot(x=select$Year, select$Nevada, main = "Nevada's Marriage Rate",
+     xlab = "Years", ylab = "Marriages per 1,000 people") + lines(lowess(select$Nevada ~ select$Year), col = "orange")
+
+plot(x=select$Year, select$Washington, main = "Washington's Marriage Rate",
+     xlab = "Years", ylab = "Marriages per 1,000 people") + lines(lowess(select$Washington ~ select$Year), col = "green")
+
+plot(x=select$Year, select$Indiana, main = "Indiana's Marriage Rate",
+     xlab = "Years", ylab = "Marriages per 1,000 people") + lines(lowess(select$Indiana ~ select$Year), col = "yellow")
+
+plot(x=select$Year, select$Mississippi, main = "Mississippi's Marriage Rate",
+     xlab = "Years", ylab = "Marriages per 1,000 people") + lines(lowess(select$Mississippi ~ select$Year), col = "red")
+
+plot(x=select$Year, select$Connecticut, main = "Connecticut's Marriage Rate",
+     xlab = "Years", ylab = "Marriages per 1,000 people") + lines(lowess(select$Connecticut ~ select$Year), col = "blueMiss")
+```
