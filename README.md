@@ -8,6 +8,7 @@ My data came from the United States Center for Disease Control (https://www.cdc.
 
 ## VISUALIZATION:
 ![image](https://github.com/brettgharris/bh_data115_proj/blob/main/marriage_rate_plots.png)
+
 This figure shows 6 scatter plots with LOWESS lines. The national marriage rate is in the top left corner with the 5 selected states following. I wanted to have all the plots together to easily show the difference in each of their respective marriage rates. LOWESS allows for a linear and nonlinear form of regression to be present in the data. The smooth weighted lines help to clearly display the marriage rates of the states and nation from 2000-2019.
 
   
